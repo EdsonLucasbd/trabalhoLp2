@@ -2,16 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package trabalho;
+package trabalho.Main;
 
 /**
  *
  * @author lucas
  */
-public class Hidroginastica extends Modalidade {
-    float preco, mensalidade;
+public class Pessoa {
+    String cpf, nome, celular;
 
-    public Hidroginastica(float preco, float mensalidade) {
-        super(preco, mensalidade);
+    public Pessoa(String cpf, String nome, String celular) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.celular = celular;
     }
+    
 }
