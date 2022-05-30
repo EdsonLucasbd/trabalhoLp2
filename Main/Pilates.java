@@ -9,7 +9,7 @@ package trabalho.Main;
  * @author lucas
  */
 public class Pilates extends Modalidade {
-    float preco, mensalidade;
+    private Aluno[] capacidadeAluno = new Aluno[10];
 
     public Pilates(float preco, float mensalidade) {
         super(preco, mensalidade);

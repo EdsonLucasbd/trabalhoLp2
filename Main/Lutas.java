@@ -9,7 +9,6 @@ package trabalho.Main;
  * @author lucas
  */
 public class Lutas extends Modalidade {
-    float preco, mensalidade;
 
     public Lutas(float preco, float mensalidade) {
         super(preco, mensalidade);

@@ -9,8 +9,9 @@ package trabalho.Main;
  * @author lucas
  */
 public class Aluno extends Pessoa{
-    String cpf, nome, email, endereco, celular, dataIngresso;
+    String email, endereco, dataIngresso;
     Responsavel responsavel;
+    Modalidade[] atividadesMatriculadas = new Modalidade[6];
 
     public Aluno(String cpf, String nome, String email, String endereco, String celular, String dataIngresso) {
         super(cpf, nome, celular);
@@ -27,5 +28,13 @@ public class Aluno extends Pessoa{
         this.responsavel = responsavel;
     }
     
+    public void MatricularModalidade(Modalidade modalidade) {
+        for (int i = 0; i < 6; i++) {
+            if(this.atividadesMatriculadas[i] == null) {
+                this.atividadesMatriculadas[i] = modalidade;
+                return;
+            }
+        }
+    }
     
 }

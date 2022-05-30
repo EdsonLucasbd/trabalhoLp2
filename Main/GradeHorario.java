@@ -8,9 +8,11 @@ package trabalho.Main;
  *
  * @author lucas
  */
-public class Responsavel extends Pessoa{
-
-    public Responsavel(String cpf, String nome, String celular) {
-        super(cpf, nome, celular);
+public class GradeHorario {
+    private String dia, horario;
+    
+    public GradeHorario(String dia, String horario) {
+        this.dia = dia;
+        this.horario = horario;
     }
 }

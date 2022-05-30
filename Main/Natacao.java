@@ -9,7 +9,6 @@ package trabalho.Main;
  * @author lucas
  */
 public class Natacao extends Modalidade {
-    float preco, mensalidade;
 
     public Natacao(float preco, float mensalidade) {
         super(preco, mensalidade);
