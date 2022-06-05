@@ -9,10 +9,29 @@ package trabalho.Main;
  * @author lucas
  */
 public class Modalidade {
-    float preco, mensalidade;
+    private float preco;
+    private String nome;
 
-    public Modalidade(float preco, float mensalidade) {
+    public Modalidade(float preco, String nome) {
         this.preco = preco;
-        this.mensalidade = mensalidade;
+        this.nome = nome;
     }
+
+    public float getPreco() {
+        return preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setPreco(float preco) {
+        this.preco = preco;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    
 }

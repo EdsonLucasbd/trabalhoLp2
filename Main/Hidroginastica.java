@@ -9,8 +9,9 @@ package trabalho.Main;
  * @author lucas
  */
 public class Hidroginastica extends Modalidade {
+    private Ginastica ginastica;
 
-    public Hidroginastica(float preco, float mensalidade) {
-        super(preco, mensalidade);
+    public Hidroginastica(float preco, String nome) {
+        super(preco, nome);
     }
 }

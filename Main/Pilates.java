@@ -9,9 +9,22 @@ package trabalho.Main;
  * @author lucas
  */
 public class Pilates extends Modalidade {
-    private Aluno[] capacidadeAluno = new Aluno[10];
+    private Turma[] turma = new Turma[2];
 
-    public Pilates(float preco, float mensalidade) {
-        super(preco, mensalidade);
+    public Pilates(float preco, String nome) {
+        super(preco, nome);
+    }
+
+    public Turma[] getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma[] turma) {
+        for(int i = 0; i < this.turma.length; i++) {
+            if(this.turma[i] == null) {
+                this.turma = turma;
+                return;
+            }
+        }
     }
 }

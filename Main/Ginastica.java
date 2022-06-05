@@ -10,7 +10,7 @@ package trabalho.Main;
  */
 public class Ginastica extends Modalidade{
 
-    public Ginastica(float preco, float mensalidade) {
-        super(preco, mensalidade);
+    public Ginastica(float preco, String nome) {
+        super(preco, nome);
     }
 }

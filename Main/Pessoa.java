@@ -9,7 +9,7 @@ package trabalho.Main;
  * @author lucas
  */
 public class Pessoa {
-    String cpf, nome, celular;
+    private String cpf, nome, celular;
 
     public Pessoa(String cpf, String nome, String celular) {
         this.cpf = cpf;

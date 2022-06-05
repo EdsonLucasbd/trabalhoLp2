@@ -9,9 +9,10 @@ package trabalho.Main;
  * @author lucas
  */
 public class Aluno extends Pessoa{
-    String email, endereco, dataIngresso;
-    Responsavel responsavel;
-    Modalidade[] atividadesMatriculadas = new Modalidade[6];
+    private String email, endereco, dataIngresso;
+    private Responsavel responsavel;
+    private Modalidade[] atividadesMatriculadas = new Modalidade[6];
+    private float mensalidade;
 
     public Aluno(String cpf, String nome, String email, String endereco, String celular, String dataIngresso) {
         super(cpf, nome, celular);
@@ -36,5 +37,30 @@ public class Aluno extends Pessoa{
             }
         }
     }
+
+    public float getMensalidade() {
+        float valorTotal = 0;
+        int totalModalidades = 0;
+        for(int i = 0; i < this.atividadesMatriculadas.length; i++) {
+            if(this.atividadesMatriculadas[i] != null) {
+                valorTotal += this.atividadesMatriculadas[i].getPreco();
+                totalModalidades++;
+            }
+        }
+        if(totalModalidades == 2) {
+            return valorTotal * 0.95f;
+        }
+        if(totalModalidades <= 3) {
+            return valorTotal * 0.80f;
+        }
+        if(responsavel != null){
+            return valorTotal * 0.90f;
+        }
+        
+        return valorTotal;
+        
+    }
+    
+    
     
 }

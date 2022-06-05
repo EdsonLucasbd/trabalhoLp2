@@ -9,8 +9,14 @@ package trabalho.Main;
  * @author lucas
  */
 public class Responsavel extends Pessoa{
+    private Pessoa parente;
 
     public Responsavel(String cpf, String nome, String celular) {
         super(cpf, nome, celular);
     }
+
+    public void setParente(Pessoa parente) {
+        this.parente = parente;
+    }
+    
 }
