@@ -30,12 +30,16 @@ public class Home extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        cadastrar_aluno_btn_menu = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setMinimumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(600, 400));
+        setSize(new java.awt.Dimension(600, 400));
         getContentPane().setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/home/lucas/Documentos/trabalho_LP2_logo.png")); // NOI18N
@@ -47,13 +51,13 @@ public class Home extends javax.swing.JFrame {
 
         jMenu2.setText("Cadastrar");
 
-        jMenuItem2.setText("Aluno");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        cadastrar_aluno_btn_menu.setText("Aluno");
+        cadastrar_aluno_btn_menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                cadastrar_aluno_btn_menuActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        jMenu2.add(cadastrar_aluno_btn_menu);
 
         jMenuItem1.setText("Responsável");
         jMenu2.add(jMenuItem1);
@@ -71,9 +75,9 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void cadastrar_aluno_btn_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrar_aluno_btn_menuActionPerformed
+        new CadastrarAluno().setVisible(true);      // TODO add your handling code here:
+    }//GEN-LAST:event_cadastrar_aluno_btn_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,14 +107,13 @@ public class Home extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Home().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Home().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem cadastrar_aluno_btn_menu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -118,6 +121,5 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
 }
