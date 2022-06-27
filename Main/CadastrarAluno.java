@@ -43,14 +43,19 @@ public class CadastrarAluno extends javax.swing.JFrame {
         maiorIdade = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         jLabel1.setText("Foco Fitness");
 
+        Nome.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         Nome.setText("Nome do aluno");
         Nome.setName("Nome"); // NOI18N
 
+        alunoNome.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         alunoNome.setName("alunoNome"); // NOI18N
         alunoNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,12 +63,15 @@ public class CadastrarAluno extends javax.swing.JFrame {
             }
         });
 
+        CPF.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         CPF.setText("CPF do aluno");
         CPF.setName("Nome"); // NOI18N
 
+        Email.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         Email.setText("Email do aluno");
         Email.setName("Nome"); // NOI18N
 
+        alunoEmail.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         alunoEmail.setName("alunoEmail"); // NOI18N
         alunoEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,13 +79,16 @@ public class CadastrarAluno extends javax.swing.JFrame {
             }
         });
 
+        Celular.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         Celular.setText("Celular do aluno");
         Celular.setName("Nome"); // NOI18N
 
+        Endereco.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         Endereco.setText("Endereço do aluno");
         Endereco.setName("Nome"); // NOI18N
 
         alunoEndereco.setColumns(20);
+        alunoEndereco.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         alunoEndereco.setRows(5);
         alunoEndereco.setName("alunoEndereco"); // NOI18N
         jScrollPane1.setViewportView(alunoEndereco);
@@ -102,45 +113,65 @@ public class CadastrarAluno extends javax.swing.JFrame {
         alunoCelular.setName("alunoCelular"); // NOI18N
 
         menorIdadeGrupo.add(menorIdade);
+        menorIdade.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         menorIdade.setText("Sim");
         menorIdade.setName("menorIdade"); // NOI18N
 
         menorIdadeGrupo.add(maiorIdade);
+        maiorIdade.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         maiorIdade.setSelected(true);
         maiorIdade.setText("Não");
         maiorIdade.setName("maiorIdade"); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("É menor de idade?");
+
+        jButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
+        jButton1.setText("Cadastrar");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(73, 136, 86)));
+
+        jButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Red"));
+        jButton2.setText("Cancelar");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(182, 73, 79)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(162, 162, 162))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Nome)
-                        .addComponent(alunoNome)
-                        .addComponent(CPF)
-                        .addComponent(Email)
-                        .addComponent(alunoEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
-                        .addComponent(Celular)
-                        .addComponent(Endereco)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(alunoCpf))
-                    .addComponent(alunoCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(menorIdade)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(maiorIdade))
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addContainerGap(158, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Nome)
+                                .addComponent(alunoNome)
+                                .addComponent(CPF)
+                                .addComponent(Email)
+                                .addComponent(alunoEmail)
+                                .addComponent(Celular)
+                                .addComponent(Endereco)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(alunoCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(alunoCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(menorIdade)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(maiorIdade)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(63, 63, 63)
+                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addContainerGap(97, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(143, 143, 143))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,8 +205,12 @@ public class CadastrarAluno extends javax.swing.JFrame {
                     .addComponent(menorIdade)
                     .addComponent(maiorIdade))
                 .addGap(44, 44, 44)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         pack();
@@ -239,6 +274,8 @@ public class CadastrarAluno extends javax.swing.JFrame {
     private javax.swing.JTextField alunoEmail;
     private javax.swing.JTextArea alunoEndereco;
     private javax.swing.JTextField alunoNome;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

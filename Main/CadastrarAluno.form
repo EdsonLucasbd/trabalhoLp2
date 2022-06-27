@@ -27,35 +27,49 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="Nome" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="alunoNome" alignment="0" max="32767" attributes="0"/>
-                      <Component id="CPF" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="Email" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="alunoEmail" alignment="0" pref="236" max="32767" attributes="0"/>
-                      <Component id="Celular" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="Endereco" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="alunoCpf" alignment="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Component id="alunoCelular" min="-2" pref="234" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="menorIdade" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="maiorIdade" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Nome" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="alunoNome" alignment="0" max="32767" attributes="0"/>
+                              <Component id="CPF" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Email" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="alunoEmail" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Celular" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Endereco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="alunoCpf" alignment="0" min="-2" pref="236" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="alunoCelular" min="-2" pref="234" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="menorIdade" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="maiorIdade" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jButton1" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                      <Component id="jButton2" min="-2" pref="80" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace pref="158" max="32767" attributes="0"/>
+              <EmptySpace pref="97" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -92,8 +106,13 @@
                   <Component id="maiorIdade" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="jButton2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="78" max="32767" attributes="0"/>
+              <EmptySpace pref="11" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -101,17 +120,26 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto Black" size="18" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Foco Fitness"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Nome">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Nome do aluno"/>
         <Property name="name" type="java.lang.String" value="Nome" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="alunoNome">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="name" type="java.lang.String" value="alunoNome" noResource="true"/>
       </Properties>
       <Events>
@@ -120,18 +148,27 @@
     </Component>
     <Component class="javax.swing.JLabel" name="CPF">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="CPF do aluno"/>
         <Property name="name" type="java.lang.String" value="Nome" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Email">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Email do aluno"/>
         <Property name="name" type="java.lang.String" value="Nome" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="alunoEmail">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="name" type="java.lang.String" value="alunoEmail" noResource="true"/>
       </Properties>
       <Events>
@@ -140,12 +177,18 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Celular">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Celular do aluno"/>
         <Property name="name" type="java.lang.String" value="Nome" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Endereco">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Endere&#xe7;o do aluno"/>
         <Property name="name" type="java.lang.String" value="Nome" noResource="true"/>
       </Properties>
@@ -160,6 +203,9 @@
         <Component class="javax.swing.JTextArea" name="alunoEndereco">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Roboto" size="12" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
             <Property name="name" type="java.lang.String" value="alunoEndereco" noResource="true"/>
           </Properties>
@@ -190,6 +236,9 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="menorIdadeGrupo"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Sim"/>
         <Property name="name" type="java.lang.String" value="menorIdade" noResource="true"/>
       </Properties>
@@ -199,6 +248,9 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="menorIdadeGrupo"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
         <Property name="name" type="java.lang.String" value="maiorIdade" noResource="true"/>
@@ -206,10 +258,43 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="12" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#xc9; menor de idade?"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="69" green="a8" id="Actions.Green" palette="3" red="59" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cadastrar"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder>
+              <Color PropertyName="shadowOuter" blue="56" green="88" red="49" type="rgb"/>
+            </BevelBorder>
+          </Border>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="60" green="58" id="Actions.Red" palette="3" red="db" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder>
+              <Color PropertyName="shadowOuter" blue="4f" green="49" red="b6" type="rgb"/>
+            </BevelBorder>
+          </Border>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
